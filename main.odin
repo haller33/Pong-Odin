@@ -158,12 +158,12 @@ handle_game_mechanics :: proc (ball : ^Ball, current_speed : f32,
 	}
 
 	/// handle paddles colision on walls
-	handle_paddles_wall ( &player1, windown_dim )
-	handle_paddles_wall ( &player2, windown_dim )
+	handle_paddles_wall ( player1, windown_dim )
+	handle_paddles_wall ( player2, windown_dim )
 	
 	/// colision detection
-	paddle_colision_detection ( ball, player1 )
-	paddle_colision_detection ( ball, player2 )
+	paddle_colision_detection ( ball, player1^ )
+	paddle_colision_detection ( ball, player2^ )
 	
 }
 
