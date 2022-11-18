@@ -1,6 +1,4 @@
-#!/bin/env bash
-
-PATH=$PATH:/home/meta/rbin
+#!/bin/bash
 
 set -x
 
